@@ -32,7 +32,7 @@ while (condition) {
         let addTodo = await inquirer.prompt({
             name: "additem",
             type: "input",
-            message: "add todo",
+            message: "please update your todos",
         });
         let newtodo = myTodo.filter(val => val != updateTodo.update);
         myTodo = [...newtodo, addTodo.additem];
